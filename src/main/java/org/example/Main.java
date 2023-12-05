@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         // Entradas del problema
-        String nombreUsuario="santiago bolivar";
+        String nombreUsuario="Bolillo";
         short edadUsuario=34;
-        long telefonoUsuario=3007066167l;
+        String telefonoUsuario="3007066167";
         String documentoIdentidad="1017254493";
         int cuotaEnero;
         int cuotaFebrero;
@@ -32,8 +33,19 @@ public class Main {
 
         Scanner leerDato = new Scanner(System.in);
 
-        System.out.println("hola soy una IA, cual es tu nombre?");
-        leerDato.nextLine();
+        System.out.println(" cual es tu nombre?");
+        nombreUsuario=leerDato.nextLine();
+        System.out.println("Bienvenido "+nombreUsuario);
+
+        System.out.println("cual es tu documento identidad");
+        documentoIdentidad=leerDato.nextLine();
+        System.out.println("Tu Identificacion es "+documentoIdentidad);
+
+        System.out.println(" cual es tu numero de telefono");
+        telefonoUsuario=leerDato.nextLine();
+        System.out.println("tu telefono es"+telefonoUsuario);
+
+
 
 
 
